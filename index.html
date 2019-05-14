@@ -1,23 +1,18 @@
 <html>
 <head>
-
+<title>Andris Skrastins</title>
 </head>    
 <body>
 
 Atzīme:<input type = "text" id = "n1" maxlength="2" value="0">
 <br><br>
-<input type="Button" value = "Spied" onclick="calc();">
-
-Result: <input type = "text" id = "result"><br><br>
-
+<input type="Button" value = "Spied" onclick="calc(parseFloat(document.getElementById('n1').value));">
 
 <script>
 
-function calc(){
+function calc(n1){
 
-var n1 = parseFloat(document.getElementById("n1").value)
 
-var op = document.getElementById("opr")
 
 if(n1 == 0){
     console.log("😡")
@@ -52,10 +47,7 @@ if(n1 == 9){
 if(n1 == 10){
     console.log("🤩")
 }
-
-
 }
-
 
 </script>
 </body>
